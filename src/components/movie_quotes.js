@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import auth from '../hoc/auth';
 
 class MovieQuotes extends Component {
     render(){
@@ -11,4 +12,4 @@ class MovieQuotes extends Component {
     }
 }
 
-export default MovieQuotes;
+export default auth(MovieQuotes, '/sign-up');
